@@ -25,7 +25,11 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-models/
+# フォルダ内の中身をすべて無視
+models/*
+
+# ただし、.gitkeepファイルだけは例外として除外（管理対象にする）
+!models/.gitkeep
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
